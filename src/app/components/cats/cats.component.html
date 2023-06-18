@@ -1,0 +1,25 @@
+<h1 class="text-center">CAT CATALOG</h1>
+
+<section class="container" id="cat-container">
+
+    <div class="card cat-card grow" style="width: 31%;" *ngFor="let cat of catArray">
+        <div class="img-container">
+            <img class="card-img-top" src="{{cat.img_src}}" alt="Imágen gatete" loading="lazy">
+        </div>
+        
+        <div class="card-body">
+          <h5 class="card-title">{{cat.name}}</h5>
+          <p class="card-text">{{cat.description}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Origin: {{cat.origin}}</li>
+          <li class="list-group-item">Temperament: {{cat.temperament}}</li>
+          <li class="list-group-item">Weight: {{cat.weight.metric}} Kg</li>
+        </ul>
+        <div class="card-body text-center">
+          <a href="{{cat.wikipedia_url}}" target="_blank" class="card-link">Link to wikipedia</a>
+          <a href="{{cat.vetstreet_url}}" target="_blank" class="card-link">Link to vetstreet</a>
+        </div>
+      </div>
+
+</section>

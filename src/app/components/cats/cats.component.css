@@ -1,0 +1,43 @@
+#cat-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cat-card{
+    margin: 5px;
+    background: floralwhite;
+    transition: 500ms linear; 
+}
+
+.grow {
+     transition: all .2s ease-in-out; 
+}
+.grow:hover {
+     transform: scale(1.1); 
+     z-index: 9;
+     border-color: chocolate;
+     border-width: 2px;
+}
+
+.cat-card:hover{
+    cursor: pointer;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-container {
+    width: 250px;
+    min-height: 120px;
+    max-height: auto;
+    float: left;
+    margin: auto;
+    padding: 3px;
+}
+
+li.list-group-item{
+    background: floralwhite;
+}
